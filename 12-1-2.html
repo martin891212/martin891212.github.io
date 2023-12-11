@@ -1,0 +1,20 @@
+<script>
+    window.onload=function(){
+        document.getElementById("js1").innerHTML ="這些文字來自JavaScript";
+    }
+    function hide(){
+        document.getElementById('js2').style.display='none';
+    }
+    function show(){
+        document.getElementById('js2').style.display='block';
+    }
+</script>
+<div>
+<p id="js1">這些文字不會出現</p>
+</div>
+
+<div>
+<p id="js2">按下按鈕顯示隱藏文字</p>
+<button type="button" onclick=hide()>點選隱藏文字</button>
+<button type="button" onclick=show()>點選顯示文字</button>
+</div>
