@@ -195,28 +195,28 @@
             <!-- Core theme JS-->
             <script src="scripts.js"></script>
     <!-- 功能腳本 -->
-<script>
-  $(document).ready(function() {
-    // 啟用輪播圖
-    $('.carousel').carousel({
-      interval: 5000
-    });
-
-    // 捲動時顯示回頂部按鈕
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('#backToTop').fadeIn();
-      } else {
-        $('#backToTop').fadeOut();
-      }
-    });
-
-    // 點擊回頂部
-    $('#backToTop').click(function() {
-      $('html, body').animate({ scrollTop: 0 }, 600);
-      return false;
-    });
-  });
-</script>
-        </body>
-    </html>
+    <script>
+      $(document).ready(function() {
+        // 啟用輪播圖
+        $('.carousel').carousel({
+          interval: 5000
+        });
+    
+        // 捲動時顯示回頂部按鈕
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $('#backToTop').fadeIn();
+          } else {
+            $('#backToTop').fadeOut();
+          }
+        });
+    
+        // 點擊回頂部
+        $('#backToTop').click(function() {
+          $('html, body').animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+    </script>
+</body>
+</html>
