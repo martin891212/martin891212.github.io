@@ -27,6 +27,17 @@
       text-align: center;
       line-height: 46px;
     }
+
+      /* 導覽列縮小樣式 */
+    .navbar-shrink {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+
+    .navbar-shrink .navbar-left,
+    .navbar-shrink .nav > li {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -145,12 +156,14 @@
       interval: 5000
     });
 
-    // 捲動時顯示回頂部按鈕
+      // 捲動時顯示回頂部按鈕 + 導覽列縮小
     $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
         $('#backToTop').fadeIn();
+        $('.navbar').addClass('navbar-shrink');
       } else {
         $('#backToTop').fadeOut();
+        $('.navbar').removeClass('navbar-shrink');
       }
     });
 
