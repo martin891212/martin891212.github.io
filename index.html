@@ -27,20 +27,6 @@
       text-align: center;
       line-height: 46px;
     }
-
-      .navbar-shrink {
-      padding-top: 15px !important;
-      padding-bottom: 15px !important;
-    }
-    
-    .navbar-shrink .navbar-left {
-      max-height: 60px !important;
-      width: auto !important;
-    }
-    
-    .navbar-shrink .nav > li {
-      display: none !important;
-    }
   </style>
 </head>
 <body>
@@ -81,7 +67,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="item active text-center">
-      <img src="img/sleep.gif" height="200" width="200" alt="sleep gif">
+      <img src="img/sleep.gif" height="300" width="300" alt="sleep gif">
     </div>
   </div>
 </div>
@@ -159,14 +145,12 @@
       interval: 5000
     });
 
-      // 捲動時顯示回頂部按鈕 + 導覽列縮小
+    // 捲動時顯示回頂部按鈕
     $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
         $('#backToTop').fadeIn();
-        $('.navbar').addClass('navbar-shrink');
       } else {
         $('#backToTop').fadeOut();
-        $('.navbar').removeClass('navbar-shrink');
       }
     });
 
@@ -180,4 +164,3 @@
 
 </body>
 </html>
-
